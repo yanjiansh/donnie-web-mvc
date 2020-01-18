@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Getting Started: Donnie Web MVC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>单文件上传</h1>
+<hr/>
+<form method="post" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file"><br>
+    <input type="submit" value="提交">
+</form>
+<h1>多文件上传</h1>
+<hr/>
+<form method="post" action="/multiUpload" enctype="multipart/form-data">
+    <input type="file" name="file"><br>
+    <input type="file" name="file"><br>
+    <input type="file" name="file"><br>
+    <input type="submit" value="提交">
+</form>
+<h1>文件下载</h1>
+<a href="/fileDownload">README.md</a>
+</body>
+</html>
